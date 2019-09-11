@@ -56,6 +56,18 @@ pip install cloudprint
 curl -skL https://raw.github.com/tjfontaine/airprint-generate/master/airprint-generate.py -o /opt/airprint-generate.py
 chmod +x /opt/airprint-generate.py
 
+
+#########################################
+##  CUSTOMIZE DRIVERS  ##
+#########################################
+curl -skL https://download.brother.com/welcome/dlf006495/mfc9560cdwcupswrapper-1.1.1-5.i386.deb -o mfc9560cdwcupswrapper-1.1.1-5.i386.deb
+dpkg  -i  --force-all  mfc9560cdwcupswrapper-1.1.1-5.i386.deb
+
+curl -skL https://download.brother.com/welcome/dlf006493/mfc9560cdwlpr-1.1.1-5.i386.deb -o mfc9560cdwlpr-1.1.1-5.i386.deb
+dpkg  -i  --force-all  mfc9560cdwlpr-1.1.1-5.i386.deb
+
+
+
 #########################################
 ##  FILES, SERVICES AND CONFIGURATION  ##
 #########################################
